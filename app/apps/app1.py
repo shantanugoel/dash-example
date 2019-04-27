@@ -1,13 +1,10 @@
 import dash_core_components as dcc
-import dash_bootstrap_components as dbc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
 from app import app
-from components.common import make_header
 
 layout = html.Div([
-    make_header(),
     html.H3('App 1'),
     dcc.Dropdown(
       id='app-1-dropdown',
